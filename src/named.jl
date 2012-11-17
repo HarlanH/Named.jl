@@ -8,14 +8,18 @@
 
 module Named
 	
-import Base.*
+using Base
+#import Base.*
+import Base.length, Base.isempty, Base.names, Base.copy, Base.has, Base.assign,
+    Base.keys, Base.values, Base.push, Base.del, Base.ref, Base.select,
+    Base.start, Base.done, Base.next, Base.show, Base.size
 
 export NamedIndex, SimpleIndex, NamedVector,
 	length, isempty, names, copy, names!, replace_names!,
-	replace_names, has, keys, values, push, del, ref,
+	replace_names, has, assign, keys, values, push, del, ref, 
 	select, select_kv,
 	set_group, set_groups, get_group, get_groups, isgroup,
-	start, done, next, show
+	start, done, next, show, size
 	
 # should this go elsewhere?
 promote_rule(::Type{Union(UTF8String,ASCIIString)}, ::Type{ASCIIString} ) = Union(UTF8String,ASCIIString)

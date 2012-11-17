@@ -3,7 +3,7 @@
 test_context("NamedIndex")
 
 require("named.jl")
-import Named.*
+using Named
 
 test_group("creation")
 
@@ -91,7 +91,7 @@ test_group("iteration")
 @test select_kv(t1, 3) == ("three", 33)
 
 test_group("construction")
-xx=NamedVector({"asdf"=>1, "qwerty"=>2})
+xx=NamedVector(["asdf"=>1, "qwerty"=>2])
 @test typeof(xx) == NamedVector{Int64}
 xx2=NamedVector(["asdf", "querty", "uiop"], [11,22,33])
 @test typeof(xx2) == NamedVector{Int64}
