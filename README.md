@@ -10,3 +10,4 @@ Written by Tom Short (@tshort) and Harlan Harris (@HarlanH).
 
 See [Pull Request 1190](https://github.com/JuliaLang/julia/pull/1190) for discussion.
 
+See LICENSE.md for the software license.
