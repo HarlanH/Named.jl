@@ -1,4 +1,4 @@
-Copyright (c) 2012, by Tom Short and Harlan Harris
+Copyright (c) 2012, by EPRI (code by Tom Short) and Harlan Harris
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
